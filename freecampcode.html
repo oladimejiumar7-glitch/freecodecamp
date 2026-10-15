@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Camp Code</title>
+    <link rel="stylesheet" href="freecampcode.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input class="search" type="search" placeholder="Search 12,900+ news articles, tutorials, and books">
+        <img class="freecodecampimg" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="">
+        <button class="menu">Menu</button>
+        <button class="donate">Donate</button>
+      </nav>
+    </header>
+    <nav class="umar">
+      <a href="">
+      <div class="a1">
+        <p>
+          Learn Software Engineering Fundermenrals-<ins class="a9">Try our FREE Curriculum</ins
+          >
+        </p>
+      </div>
+    </a>
+  </nav>
+    <div class="a2">
+      <p>February 3, 2020 / <a href="" class="a2i">#CSS</a></p>
+      <p class="a2ii">
+        CSS Unit Guide: CSS em, rem, vh, vw, and more, Explained
+      </p>
+    </div>
+    <br>
+    <br>
+      <img src="./assets/5f9c9cd8740569d1a4ca347f.jpg" alt="" width="1000" class="a7ii">
+      <br>
+    <!-- <div class="a3"></div> -->
+    <div class="a4">
+      <p>
+        Many CSS properties like <span>width</span>, <span>margin</span>,
+        <span>padding</span>, and <span>font-size</span> take a length, and CSS
+        has many different ways to express length.
+      </p>
+      <p>
+        In CSS, length is a number an a unit with no whitespace. For example,
+        <span>5px</span>, <span>0.9em</span>, and so on.
+      </p>
+      <p>
+        There are two general kinds of units used for length and size in CSS:
+        absolute and relative.
+      </p>
+      <h2>Absolute Length Units</h2>
+      <p>
+        Absolute length units are based on an actual physical unit, and are
+        generally considered to be the same size across devices. However,
+        depending on your screen size and quality, or settings in your browser
+        or OS, there may be some exceptions
+      </p>
+      <p>Here are some common absolute length units in CSS:</p>
+      <br />
+      <span>px</span>
+      <p>
+        Pixels, or <span>px</span>, are one of the most common length units in
+        CSS.
+      </p>
+      <p>
+        In CSS, 1 pixel is <a href="" class="a4i">formally defined</a> as 1/96 of an inch. All other
+        absolute length units are based on this definition of a pixel.
+      </p>
+      <p>
+        But when that standard was originally formulated, most monitors had a
+        resolution of 1024 x 768, and a DPI (dots per inch) of 96.
+      </p>
+      <p>
+        Screens on modern devices have much higher resolutions and DPIs, so a
+        line that's 96 pixels long may not measure exactly 1 inch, depending on
+        the device.
+      </p>
+      <p>
+        Even though sizing in pixels can vary across devices, it's generally
+        considered better to use pixels for screens.
+      </p>
+      <p>
+        If you know that your page will be printed on a high quality printer,
+        then you may consider using another unit like <span>cm</span> or
+        <span>mm</span>.
+      </p>
+      <p>
+        You can read more about the history of the pixel unit and why a CSS inch
+        doesn't always match a physical inch
+        <a href="" class="a4i">in this article</a>.
+      </p>
+      <span>cm</span>
+      <p>Centimeters.</p>
+      <p>
+        In CSS, <span>1cm</span> is roughly 37.8 pixels, or about 25.2/64 of an
+        inch.
+      </p>
+      <span>mm</span>
+      <p>Millimeters.</p>
+      <p>
+        In CSS, <span>1mm</span> is roughly 3.78 pixels, or 1/10th of a
+        centimeter.
+      </p>
+      <span>in</span>
+      <p>Inches.</p>
+      <p>In CSS, <span>1in</span> is roughly 96 pixels, or about 2.54cm.</p>
+      <span>pt</span>
+      <p>Points.</p>
+      <p>
+        In CSS, <span>1pt</span> is roughly 1.3333 pixels, or 1/72th of an inch.
+      </p>
+      <span>pc</span>
+      <p>Picas</p>
+      <p>In CSS, <span>1pc</span> is roughly 16 pixels, or 1/6 of an inch.</p>
+      <h2>Relative Length Units</h2>
+      <p>
+        Relative length units are relative to another element's size or
+        settings. For example, the relative font size of an element may be
+        calculated using the parent element's font size.
+      </p>
+      <p>Here are some common relative length units:</p>
+      <span>em</span>
+      <p>
+        The CSS <span>em</span> unit gets its name from a typographical unit. In
+        typography, the term em "<a href="" class="a4i"
+          >was originally a reference to the width of the capital M in the
+          typeface and size being used</a
+        >".
+      </p>
+      <p>
+        When used with the <span>font-size</span> property,
+        <span>em</span> inherits the <span>font-size</span> from its parent
+        element:
+      </p>
+    </div>
+    <div class="a5">
+      <p><code>.container {</code></p>
+      <p><code> font-size: 16px;</code></p>
+      <p><code>}</code></p>
+      <br>
+      <p><code>.container p {</code></p>
+      <p><code>font-size: 1em;</code></p>
+      <p><code>}</code></p>
+      <br>
+      <p><code>.container h2 {</code></p>
+      <p><code>font-size: 3em;</code></p>
+      <p><code>}</code></p>
+      <br>
+      <p><code>.container h3 {</code></p>
+      <p><code>font-size: 2em;</code></p>
+      <p><code>}</code></p>
+    </div>
+    <div class="a4">
+      <p>
+        In this example, the <span>font-size</span> of <span>p</span> is
+        <span>16x</span> (16 1). Meanwhile, the <span>font-size</span> of
+        <span>h2</span> is <span>48px</span> (16 3), and <span>32px</span> for
+        the <span>h3</span> (16 * 2).
+      </p>
+      <p>
+        If <span>em</span> is used with another property like
+        <span>width</span>, <span>em</span> is calculated using the size of the
+        targeted element.
+      </p>
+      <span>rem</span>
+      <p>
+        Root <span>em</span>. This relative unit is not affected by the size or
+        setting of a parent element, and is instead based on the root of the
+        document. For websites, the root of the document is the
+        <span>html</span> element.
+      </p>
+    </div>
+    <div class="a5">
+      <p><code>p {</code></p>
+      <p><code>font-size: 1.25rem;</code></p>
+      <p><code>}</code></p>
+    </div>
+    <div class="a4">
+      <p>
+        In most browsers, the default font size is 16, so the <span>font-size</span> of <span>html</span>
+        elements is <span>16px</span>. So in this case, <span>p</span> is <span>20px</span> (16 * 1.25).
+      </p>
+      <p>
+        But if a user changes their browser's default font size, then the
+        <span>font-size</span> of <span>p</span> will scale up or down accordingly.
+      </p>
+      <span>%</span>
+      <p>Percentages, or the percent size relative to the parent's size:</p>
+    </div>
+    <div class="a5">
+      <p><code>div {</code></p>
+      <p><code>width: 400px;</code></p>
+      <p><code>}</code></p>
+      <br />
+      <p><code>div p {</code></p>
+      <p><code> width: 75%;</code></p>
+      <p><code>}</code></p>
+    </div>
+    <div class="a4">
+      <p>
+        Since the parent’s width is <span>400px</span>, the width of the inner paragraph is
+        be <span>300px</span> (400 * .75).
+      </p>
+      <span>vw</span>
+      <p>View width. <span>1vw</span> is 1% of the width of the viewport.</p>
+      <p>For example:</p>
+    </div>
+    <div class="a5">
+      <code>
+        <p>body {</p>
+        <p>width: 100vw;</p>
+        <p>}</p>
+      </code>
+    </div>
+    <div class="a4">
+      <p>
+        Since the <span>body</span> element is set to <span>100vw</span>, or 100% of the viewport's width,
+        it will take up the full width available to it. So if you resize your
+        browser to 690 pixels wide, then the <span>body</span> will take up all 690 pixels in
+        width.
+      </p>
+      <span>vh</span>
+      <p>View height. <span>1vh</span> is 1% of the height of the viewport.</p>
+      <p>For example:</p>
+    </div>
+    <div class="a5">
+      <code>
+        <p>div {</p>
+        <p>height: 50vh;</p>
+        <p>}</p>
+      </code>
+    </div>
+    <div class="a4">
+      <p>
+        The <span>div</span> will fill 50% of the viewport's height. So if the browser window
+        is 900 pixels high, the <span>height</span> of the <span>div</span> will be 450 pixels.
+      </p>
+      <span>ex</span>
+      <p>
+        The CSS <span>ex</span> unit gets its name from x-height in typography, or "<a href="" class="a4i">the
+        height of the letter x in the font</a>". In many fonts, the lowercase x
+        character is usually about half the height of the largest character.
+      </p>
+    </div>
+    <br>
+    <br>
+      <img src="./assets/660px-Typography_Line_Terms.svg.webp" alt="" class="a6">
+    <br>
+    <div class="a4">
+      <a href="" class="a4i source">Source</a>
+    </div>
+    <br>
+    <div class="a4">
+      <p>In CSS, <span>1ex</span> is the x-height of the font, or half of <span>1em</span>.</p>
+      <p>But since the size of the lowercase x character can vary significantly based on the font, the CSS <span>ex</span> unit is rarely used.</p>
+      <br>
+      <span>ch</span>
+      <p>Charater unit. The CSS <span>ch</span> unit is defined as the width of the character 0 (zero, or U+0030) of the font.</p>
+      <p>While the <span>ch</span> unit works as an exact measurement for monospaced / fixed width fonts like Courier, it can be unpredictable with proportional fonts like Arial.</p>
+      <p>For example, if your font is Courier and you set an element's width to <span>60ch</span>, that element will be 60 exactly 60 characters wide.</p>
+      <br>
+      <p>But if your font is Arial and you set an element's width to <span>60ch</span> there's no telling how wide the element will be – characters may overflow the container, or fall short.</p>
+    </div>
+    <br>
+    <br>
+      <img src="./assets/ch-unit-monospaced-and-proportional-fonts.webp" alt="" width="600" class="a7i">
+      <br>
+    <div class="a4">
+      <br>
+      <a href="" class="a4i source">Source</a>
+    </div>
+    <div class="a4">
+      <p>Check out <a href="" class="a4i">this article</a> for an in-depth explanation of the <span>ch</span> unit, and to see some examples</p>
+      <p><span>vmin</span> <strong>and</strong> <span>vmax</span></p>
+      <p>Viewport minimum (vmin) and viewport maximum (vmax) units are based on the values of vw and vh.</p>
+      <p><span>1vmin</span> is 1% of the viewport's smallest dimension, and <span>1vmax</span> is 1% of the viewports largest dimension.</p>
+      <p>For example, imagine a browser window that is 1200 pixels wide and 600 pixels high. In this case, <span>1vmin</span> is <span>6px</span> (1% of <span>vh</span>, which is smaller at 600 pixels). Meanwhile, <span>1vmax</span> is <span>12px</span> (1% of <span>vh</span>, which is the larger value at 1200 pixels).</p>
+      <br>
+      <hr>
+      <br>
+      <p>If you read this far, thank the author to show them you care. <button>Say Thanks</button></p>
+      <p>Learn to code for free. freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers. <button>Get started</button></p>
+    </div>
+  </body>
+</html>
